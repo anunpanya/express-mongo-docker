@@ -8,6 +8,12 @@ $ git clone https://github.com/anunpanya/express-mongo-docker.git
 $ cd express-mongo-docker/
 $ docker build -t app:0.1 .
 ```
+รัน webserver
+
+```
+$ docker run -d -p3000:3000 --link mongo:mongo --rm --name app app:0.1
+```
+
 เพิ่มข้อมูล
 
 ```
